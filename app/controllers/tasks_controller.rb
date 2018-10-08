@@ -25,7 +25,6 @@ class TasksController < ApplicationController
   end
   
   def edit
-    
   end
   
   def update
@@ -53,7 +52,7 @@ class TasksController < ApplicationController
   end 
   
   def task_params
-    params.require(:task).permit(:content)
+    params.require(:task).permit(:content, :title)
   end 
 
 end
