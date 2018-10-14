@@ -17,19 +17,10 @@
   </head>
 
   <body>
-<%= render 'layouts/navbar' %>    
-    
+    <%= render 'layouts/navbar' %>    
     <div class='container'>
-      <div class="row">
       <%= render 'layouts/flash_tasks' %>
-      
-      <div class="col-xs-12 
-      col-sm-offset-2 col-sm-8
-      col-lg-offset-3 col-lg-6"><%= yield %></div>
-      
-      </div>
+      <%= yield %>
     </div>
-    
-    
   </body>
 </html>
